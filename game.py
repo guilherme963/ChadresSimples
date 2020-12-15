@@ -1,4 +1,5 @@
 
+
 import random
 import pygame
 import pygame_menu
@@ -250,12 +251,15 @@ class Tabuleiro:
 
 
 
-tabuleiro = Tabuleiro(QUADRADOS)
-clock = pygame.time.Clock()
-
 
 def main():
     pygame.init()
+    tabuleiro = Tabuleiro(QUADRADOS)
+    clock = pygame.time.Clock()
+
+    tam = (QUADRADOS*LADO_TELA, QUADRADOS*LADO_TELA)
+    tela = pygame.display.set_mode(tam)
+
 
     terminou = False
     while not terminou:

@@ -33,8 +33,6 @@ menu.add_image(caminho, scale=(0.45, 0.45), scale_smooth=True)
 menu.add_button('Começar', boot)
 menu.add_selector('Psicodélico ', [('Não', False), ('Sim', True)], onchange= epilepis)
 menu.add_selector('Tamanho ', [('8', 8), ('12',12)], onchange= tamanho)
-menu.add_button('Começar', boot)
-
 
 
 while not comecou:
